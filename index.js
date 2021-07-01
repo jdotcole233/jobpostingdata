@@ -5,4 +5,14 @@
 import { results } from "./JobsPosting.js";
 
 const result_selection = ["Job_Title", "Location", "Job_Type", "Maximum_Salary_Range", "Category", "Department", "Job_Description", "CreateDate_Yr", "CreateDate_Mth", "DaystilExpires"];
+const features = results.features;
 
+features.forEach(feature => {
+    result_selection.forEach(selection => {
+        console.log(`${selection.split('_').join(' ')}: ${feature.properties[selection]}`);
+    });
+    console.log('\n');
+});
+
+
+// console.log(results.features[0]);
