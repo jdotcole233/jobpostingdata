@@ -1,7 +1,8 @@
 import { results } from "./JobsPosting.js";
 import PromptSync from "prompt-sync";
+import moment from "moment";
 
-const result_selection = ["Job_Title", "Location", "Job_Type", "Category", "Department", "Job_Description", "Maximum_Salary", "Create_Date"];
+const result_selection = ["Job_Title", "Location", "Job_Type", "Maximum_Salary_Range", "Category", "Department", "Job_Description", "Maximum_Salary", "Create_Date"];
 const features = results.features;
 
 // function to display the results using the result_selection and filtered object 
