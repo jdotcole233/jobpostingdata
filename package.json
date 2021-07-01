@@ -1,0 +1,11 @@
+{
+  "name": "jobsposting",
+  "version": "1.0.0",
+  "description": "A sample data from https://catalog.data.gov/dataset/current-job-postings-9d6d8 used for learning purposes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
