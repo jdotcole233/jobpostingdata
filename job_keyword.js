@@ -18,6 +18,7 @@ const displaySearchResult = (choices, dataset) => {
     console.log('\n');
   })
 }
+
 // search for jobs by description keyword
 const prompt = PromptSync({sigint:true});
 const search_query = prompt('Enter keyword in description to search >> ');
@@ -25,3 +26,5 @@ const search_keyword = features.filter(feature => feature.properties.Job_Descrip
 
 console.log(`Found ${search_keyword.length} result(s) for ${search_query}\n`);
 displaySearchResult(result_selection,search_keyword);
+
+export {displaySearchResult, result_selection, features};
